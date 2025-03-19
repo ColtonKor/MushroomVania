@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     public void TakeKnockback(Vector2 direction)
     {
         Vector2 normalized = direction.normalized;
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         rb.AddForce(normalized * knockbackForce, ForceMode.Impulse);
     }
 }

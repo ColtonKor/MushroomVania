@@ -14,7 +14,7 @@ public class VenomBall : MonoBehaviour
     public void SetVelocity(Vector2 velocity)
     {
         Rigidbody rb = GetComponent<Rigidbody>();
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
     }
 
     private void OnTriggerEnter(Collider other)

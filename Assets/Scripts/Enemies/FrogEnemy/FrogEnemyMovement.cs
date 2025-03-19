@@ -122,7 +122,7 @@ public class FrogEnemyMovement : EnemyMovement
         {
             direction = -1;
         }
-        rb.velocity = new Vector3(jumpForceX * direction, jumpForceY, 0);
+        rb.linearVelocity = new Vector3(jumpForceX * direction, jumpForceY, 0);
     }
 
     public void FollowJump()
@@ -137,7 +137,7 @@ public class FrogEnemyMovement : EnemyMovement
         {
             jumpDirection = 1;
         }
-        rb.velocity = new Vector3(jumpForceX * jumpDirection, jumpForceY, 0);
+        rb.linearVelocity = new Vector3(jumpForceX * jumpDirection, jumpForceY, 0);
     }
 
     public void ChangeTarget(Transform player)

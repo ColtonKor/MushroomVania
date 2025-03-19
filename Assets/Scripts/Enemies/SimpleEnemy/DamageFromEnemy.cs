@@ -102,6 +102,6 @@ public class DamageFromEnemy : MonoBehaviour
     {
         rb.AddForce(knockback * impulseScalar, ForceMode.Impulse);//Hits the impulse then zeros out after desired time.
         yield return new WaitForSeconds(impulseDuration);
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
     }
 }
